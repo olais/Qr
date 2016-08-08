@@ -1,0 +1,24 @@
+<html>
+<title>Genera resumen</title>
+<head>  
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+		<link rel="stylesheet" type="text/css" media="print" title="Vista impresión" href="css/impresionR.css" />
+		<script type="text/javascript">
+	
+		$(document).ready(function(){
+			window.print();
+		   var resumen= sessionStorage.getItem("tabla");
+		   $("#res").html(resumen);
+		});
+
+
+</script>
+</head>
+<body>
+<div id="res"></div>
+
+<meta http-equiv="Refresh" content="0;index.php">
+</body>
+</html>
